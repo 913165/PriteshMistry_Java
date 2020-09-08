@@ -19,3 +19,7 @@ SELECT VERSION_START_DATE FROM EMP WHERE VERSION_START_DATE >  SYSDATE -1 )
 UNION
 SELECT EMP_ID,EMP_NAME,VERSION_START_DATE,VERSION_END_DATE, 'INSERT' STATUS FROM EMP WHERE VERSION_START_DATE >  SYSDATE -1
 		
+
+
+	System.out.println("Runtime.getRuntime().maxMemory() : "+(Runtime.getRuntime().maxMemory())/(1024*1024));
+		System.out.println("Runtime.getRuntime().totalMemory() : "+Runtime.getRuntime().totalMemory()/(1024*1024));
